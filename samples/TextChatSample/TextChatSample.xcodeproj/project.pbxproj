@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7CA62841B32F4C000A06C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62831B32F4C000A06C2C /* main.m */; };
+		D7CA62871B32F4C000A06C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62861B32F4C000A06C2C /* AppDelegate.m */; };
+		D7CA628A1B32F4C000A06C2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62891B32F4C000A06C2C /* ViewController.m */; };
+		D7CA628D1B32F4C000A06C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7CA628B1B32F4C000A06C2C /* Main.storyboard */; };
+		D7CA628F1B32F4C000A06C2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CA628E1B32F4C000A06C2C /* Images.xcassets */; };
+		D7CA62921B32F4C000A06C2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7CA62901B32F4C000A06C2C /* LaunchScreen.xib */; };
+		D7CA62A81B32F56700A06C2C /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62A71B32F56700A06C2C /* OpenTok.framework */; };
+		D7CA62B41B32F5BD00A06C2C /* libOTKTextChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */; };
+		D7CA62B81B32F72E00A06C2C /* OTKTextChatBundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7CA62C61B32FDCF00A06C2C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62B91B32FDCF00A06C2C /* VideoToolbox.framework */; };
+		D7CA62C71B32FDCF00A06C2C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BA1B32FDCF00A06C2C /* GLKit.framework */; };
+		D7CA62C81B32FDCF00A06C2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BB1B32FDCF00A06C2C /* SystemConfiguration.framework */; };
+		D7CA62C91B32FDCF00A06C2C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BC1B32FDCF00A06C2C /* CoreTelephony.framework */; };
+		D7CA62CA1B32FDCF00A06C2C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BD1B32FDCF00A06C2C /* OpenGLES.framework */; };
+		D7CA62CB1B32FDCF00A06C2C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BE1B32FDCF00A06C2C /* CoreVideo.framework */; };
+		D7CA62CC1B32FDCF00A06C2C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BF1B32FDCF00A06C2C /* CoreMedia.framework */; };
+		D7CA62CD1B32FDCF00A06C2C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C01B32FDCF00A06C2C /* AudioToolbox.framework */; };
+		D7CA62CE1B32FDCF00A06C2C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C11B32FDCF00A06C2C /* AVFoundation.framework */; };
+		D7CA62CF1B32FDCF00A06C2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C21B32FDCF00A06C2C /* QuartzCore.framework */; };
+		D7CA62D01B32FDCF00A06C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C31B32FDCF00A06C2C /* Foundation.framework */; };
+		D7CA62D11B32FDCF00A06C2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C41B32FDCF00A06C2C /* CoreGraphics.framework */; };
+		D7CA62D21B32FDCF00A06C2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62C51B32FDCF00A06C2C /* UIKit.framework */; };
+		D7CA62D41B32FDE200A06C2C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62D31B32FDE100A06C2C /* libc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7CA62AE1B32F5AB00A06C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D79756BB1B1F73620022B7B9;
+			remoteInfo = OTKTextChat;
+		};
+		D7CA62B01B32F5AB00A06C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D79756D91B1F74690022B7B9;
+			remoteInfo = OTKTextChatBundle;
+		};
+		D7CA62B21B32F5B700A06C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D79756BA1B1F73620022B7B9;
+			remoteInfo = OTKTextChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7CA62B71B32F72300A06C2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D7CA62B81B32F72E00A06C2C /* OTKTextChatBundle.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D7CA627E1B32F4C000A06C2C /* TextChatSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextChatSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7CA62821B32F4C000A06C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7CA62831B32F4C000A06C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7CA62851B32F4C000A06C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7CA62861B32F4C000A06C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7CA62881B32F4C000A06C2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7CA62891B32F4C000A06C2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7CA628C1B32F4C000A06C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7CA628E1B32F4C000A06C2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7CA62911B32F4C000A06C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D7CA62A71B32F56700A06C2C /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenTok.framework; path = ../../../OpenTok.framework; sourceTree = "<group>"; };
+		D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OTKTextChat.xcodeproj; path = ../../../OTKTextChat/OTKTextChat.xcodeproj; sourceTree = "<group>"; };
+		D7CA62B91B32FDCF00A06C2C /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		D7CA62BA1B32FDCF00A06C2C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D7CA62BB1B32FDCF00A06C2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7CA62BC1B32FDCF00A06C2C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D7CA62BD1B32FDCF00A06C2C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D7CA62BE1B32FDCF00A06C2C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D7CA62BF1B32FDCF00A06C2C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D7CA62C01B32FDCF00A06C2C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7CA62C11B32FDCF00A06C2C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D7CA62C21B32FDCF00A06C2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7CA62C31B32FDCF00A06C2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7CA62C41B32FDCF00A06C2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7CA62C51B32FDCF00A06C2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7CA62D31B32FDE100A06C2C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7CA627B1B32F4C000A06C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CA62D41B32FDE200A06C2C /* libc++.dylib in Frameworks */,
+				D7CA62CA1B32FDCF00A06C2C /* OpenGLES.framework in Frameworks */,
+				D7CA62B41B32F5BD00A06C2C /* libOTKTextChat.a in Frameworks */,
+				D7CA62CE1B32FDCF00A06C2C /* AVFoundation.framework in Frameworks */,
+				D7CA62C81B32FDCF00A06C2C /* SystemConfiguration.framework in Frameworks */,
+				D7CA62D21B32FDCF00A06C2C /* UIKit.framework in Frameworks */,
+				D7CA62CC1B32FDCF00A06C2C /* CoreMedia.framework in Frameworks */,
+				D7CA62A81B32F56700A06C2C /* OpenTok.framework in Frameworks */,
+				D7CA62C71B32FDCF00A06C2C /* GLKit.framework in Frameworks */,
+				D7CA62C91B32FDCF00A06C2C /* CoreTelephony.framework in Frameworks */,
+				D7CA62D01B32FDCF00A06C2C /* Foundation.framework in Frameworks */,
+				D7CA62CF1B32FDCF00A06C2C /* QuartzCore.framework in Frameworks */,
+				D7CA62D11B32FDCF00A06C2C /* CoreGraphics.framework in Frameworks */,
+				D7CA62CD1B32FDCF00A06C2C /* AudioToolbox.framework in Frameworks */,
+				D7CA62C61B32FDCF00A06C2C /* VideoToolbox.framework in Frameworks */,
+				D7CA62CB1B32FDCF00A06C2C /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7CA62751B32F4C000A06C2C = {
+			isa = PBXGroup;
+			children = (
+				D7CA62801B32F4C000A06C2C /* TextChatSample */,
+				D7CA627F1B32F4C000A06C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7CA627F1B32F4C000A06C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA627E1B32F4C000A06C2C /* TextChatSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7CA62801B32F4C000A06C2C /* TextChatSample */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA62A71B32F56700A06C2C /* OpenTok.framework */,
+				D7CA62D51B32FDF500A06C2C /* Frameworks */,
+				D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */,
+				D7CA62851B32F4C000A06C2C /* AppDelegate.h */,
+				D7CA62861B32F4C000A06C2C /* AppDelegate.m */,
+				D7CA62881B32F4C000A06C2C /* ViewController.h */,
+				D7CA62891B32F4C000A06C2C /* ViewController.m */,
+				D7CA628B1B32F4C000A06C2C /* Main.storyboard */,
+				D7CA628E1B32F4C000A06C2C /* Images.xcassets */,
+				D7CA62901B32F4C000A06C2C /* LaunchScreen.xib */,
+				D7CA62811B32F4C000A06C2C /* Supporting Files */,
+			);
+			path = TextChatSample;
+			sourceTree = "<group>";
+		};
+		D7CA62811B32F4C000A06C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA62821B32F4C000A06C2C /* Info.plist */,
+				D7CA62831B32F4C000A06C2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7CA62AA1B32F5AB00A06C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */,
+				D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7CA62D51B32FDF500A06C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA62D31B32FDE100A06C2C /* libc++.dylib */,
+				D7CA62B91B32FDCF00A06C2C /* VideoToolbox.framework */,
+				D7CA62BA1B32FDCF00A06C2C /* GLKit.framework */,
+				D7CA62BB1B32FDCF00A06C2C /* SystemConfiguration.framework */,
+				D7CA62BC1B32FDCF00A06C2C /* CoreTelephony.framework */,
+				D7CA62BD1B32FDCF00A06C2C /* OpenGLES.framework */,
+				D7CA62BE1B32FDCF00A06C2C /* CoreVideo.framework */,
+				D7CA62BF1B32FDCF00A06C2C /* CoreMedia.framework */,
+				D7CA62C01B32FDCF00A06C2C /* AudioToolbox.framework */,
+				D7CA62C11B32FDCF00A06C2C /* AVFoundation.framework */,
+				D7CA62C21B32FDCF00A06C2C /* QuartzCore.framework */,
+				D7CA62C31B32FDCF00A06C2C /* Foundation.framework */,
+				D7CA62C41B32FDCF00A06C2C /* CoreGraphics.framework */,
+				D7CA62C51B32FDCF00A06C2C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7CA627D1B32F4C000A06C2C /* TextChatSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CA62A11B32F4C000A06C2C /* Build configuration list for PBXNativeTarget "TextChatSample" */;
+			buildPhases = (
+				D7CA627A1B32F4C000A06C2C /* Sources */,
+				D7CA627B1B32F4C000A06C2C /* Frameworks */,
+				D7CA627C1B32F4C000A06C2C /* Resources */,
+				D7CA62B71B32F72300A06C2C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7CA62B31B32F5B700A06C2C /* PBXTargetDependency */,
+			);
+			name = TextChatSample;
+			productName = TextChatSample;
+			productReference = D7CA627E1B32F4C000A06C2C /* TextChatSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7CA62761B32F4C000A06C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = TokBox;
+				TargetAttributes = {
+					D7CA627D1B32F4C000A06C2C = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = D7CA62791B32F4C000A06C2C /* Build configuration list for PBXProject "TextChatSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7CA62751B32F4C000A06C2C;
+			productRefGroup = D7CA627F1B32F4C000A06C2C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D7CA62AA1B32F5AB00A06C2C /* Products */;
+					ProjectRef = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D7CA627D1B32F4C000A06C2C /* TextChatSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOTKTextChat.a;
+			remoteRef = D7CA62AE1B32F5AB00A06C2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OTKTextChatBundle.bundle;
+			remoteRef = D7CA62B01B32F5AB00A06C2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7CA627C1B32F4C000A06C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CA628D1B32F4C000A06C2C /* Main.storyboard in Resources */,
+				D7CA62921B32F4C000A06C2C /* LaunchScreen.xib in Resources */,
+				D7CA628F1B32F4C000A06C2C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7CA627A1B32F4C000A06C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CA628A1B32F4C000A06C2C /* ViewController.m in Sources */,
+				D7CA62871B32F4C000A06C2C /* AppDelegate.m in Sources */,
+				D7CA62841B32F4C000A06C2C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7CA62B31B32F5B700A06C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OTKTextChat;
+			targetProxy = D7CA62B21B32F5B700A06C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7CA628B1B32F4C000A06C2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7CA628C1B32F4C000A06C2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7CA62901B32F4C000A06C2C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7CA62911B32F4C000A06C2C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7CA629F1B32F4C000A06C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7CA62A01B32F4C000A06C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7CA62A21B32F4C000A06C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/cesarg/devel/tokbox/opentok-ios-sdk-ui",
+				);
+				INFOPLIST_FILE = TextChatSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7CA62A31B32F4C000A06C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/cesarg/devel/tokbox/opentok-ios-sdk-ui",
+				);
+				INFOPLIST_FILE = TextChatSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7CA62791B32F4C000A06C2C /* Build configuration list for PBXProject "TextChatSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7CA629F1B32F4C000A06C2C /* Debug */,
+				D7CA62A01B32F4C000A06C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CA62A11B32F4C000A06C2C /* Build configuration list for PBXNativeTarget "TextChatSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7CA62A21B32F4C000A06C2C /* Debug */,
+				D7CA62A31B32F4C000A06C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7CA62761B32F4C000A06C2C /* Project object */;
+}
