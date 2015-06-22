@@ -24,6 +24,8 @@ static NSString* const kSessionId = @"";
 // Replace with your generated token
 static NSString* const kToken = @"";
 
+static NSString* const kTextChatType = @"TextChat";
+
 @implementation ViewController {
     OTSession* _session;
 }
@@ -92,7 +94,7 @@ static NSString* const kToken = @"";
 - (BOOL)onMessageReadyToSend:(OTKChatMessage *)message {
     message.sender = _session.connection.data;
     OTError *error = nil;
-    [_session signalWithType:@"type" string:message.text connection:nil error:&error];
+    [_session signalWithType:kTextChatType string:message.text connection:nil error:&error];
     if (error) {
         return NO;
     } else {
@@ -109,6 +111,8 @@ static NSString* const kToken = @"";
     _textChat = [[OTKTextChatComponent alloc] init];
     
     _textChat.delegate = self;
+    
+    [_textChat setMaxLength:1005];
     
     CGRect r = self.view.bounds;
     r.origin.y += 20;
