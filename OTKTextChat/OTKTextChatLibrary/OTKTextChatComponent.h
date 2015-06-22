@@ -17,20 +17,43 @@
 
 @end
 
+/**
+ * An delegate for receiving events when a text chat message is ready to send.
+ */
 @protocol OTKTextChatDelegate <NSObject>
 
+/**
+ * Called when a message in the OTKTextChatComponent is ready to send. A message
+ * is ready to send when the user clicks the Send button in the
+ * OTKTextChatComponent user interface.
+ */
 - (BOOL)onMessageReadyToSend:(OTKChatMessage *)message;
 
 @end
 
+/**
+ * A controller for the OpenTok iOS Text Chat UI widget.
+ */
 @interface OTKTextChatComponent : NSObject <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
+/**
+ * The view containing the OTKTextChatComponent user interface.
+ */
 @property (nonatomic, strong) IBOutlet UIView * view;
 
+/**
+ * Set to the delegate object that receives events for this OTKTextChatComponent.
+ */
 @property (nonatomic, weak) id<OTKTextChatDelegate> delegate;
 
+/**
+ * Add a message to the TextChatListener received message list.
+ */
 - (BOOL)sendMessage:(OTKChatMessage *)message;
 
+/**
+ * Set the maximum length of a text chat message.
+ */
 - (void)setMaxLength:(int) length;
 
 @end
