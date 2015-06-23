@@ -227,6 +227,7 @@ typedef enum : NSUInteger {
 
 - (void)setMaxLength:(int) length {
     maxLength = length;
+    [self updateCounter:maxLength - (int)[_textChatView.textField.text length]];
 }
 
 #pragma mark Implementation
