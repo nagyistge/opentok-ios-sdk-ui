@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76A181E1B3DB419009F51BC /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76A181B1B3DB419009F51BC /* OpenTok.framework */; };
+		D78C23411B4D64E1004EFC90 /* libOTKTextChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D78C233E1B4D64E1004EFC90 /* libOTKTextChat.a */; };
+		D78C23421B4D64E1004EFC90 /* OTKTextChatBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D78C23401B4D64E1004EFC90 /* OTKTextChatBundle.bundle */; };
 		D7CA62841B32F4C000A06C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62831B32F4C000A06C2C /* main.m */; };
 		D7CA62871B32F4C000A06C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62861B32F4C000A06C2C /* AppDelegate.m */; };
 		D7CA628A1B32F4C000A06C2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA62891B32F4C000A06C2C /* ViewController.m */; };
 		D7CA628D1B32F4C000A06C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7CA628B1B32F4C000A06C2C /* Main.storyboard */; };
 		D7CA628F1B32F4C000A06C2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CA628E1B32F4C000A06C2C /* Images.xcassets */; };
 		D7CA62921B32F4C000A06C2C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7CA62901B32F4C000A06C2C /* LaunchScreen.xib */; };
-		D7CA62A81B32F56700A06C2C /* OpenTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62A71B32F56700A06C2C /* OpenTok.framework */; };
-		D7CA62B41B32F5BD00A06C2C /* libOTKTextChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */; };
-		D7CA62B81B32F72E00A06C2C /* OTKTextChatBundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7CA62C61B32FDCF00A06C2C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62B91B32FDCF00A06C2C /* VideoToolbox.framework */; };
 		D7CA62C71B32FDCF00A06C2C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BA1B32FDCF00A06C2C /* GLKit.framework */; };
 		D7CA62C81B32FDCF00A06C2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62BB1B32FDCF00A06C2C /* SystemConfiguration.framework */; };
@@ -32,30 +32,6 @@
 		D7CA62D41B32FDE200A06C2C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA62D31B32FDE100A06C2C /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D7CA62AE1B32F5AB00A06C2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D79756BB1B1F73620022B7B9;
-			remoteInfo = OTKTextChat;
-		};
-		D7CA62B01B32F5AB00A06C2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D79756D91B1F74690022B7B9;
-			remoteInfo = OTKTextChatBundle;
-		};
-		D7CA62B21B32F5B700A06C2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D79756BA1B1F73620022B7B9;
-			remoteInfo = OTKTextChat;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		D7CA62B71B32F72300A06C2C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -63,13 +39,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				D7CA62B81B32F72E00A06C2C /* OTKTextChatBundle.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D76A181B1B3DB419009F51BC /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
+		D78C233E1B4D64E1004EFC90 /* libOTKTextChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOTKTextChat.a; sourceTree = "<group>"; };
+		D78C233F1B4D64E1004EFC90 /* OTKTextChatComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTKTextChatComponent.h; sourceTree = "<group>"; };
+		D78C23401B4D64E1004EFC90 /* OTKTextChatBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OTKTextChatBundle.bundle; sourceTree = "<group>"; };
 		D7CA627E1B32F4C000A06C2C /* TextChatSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextChatSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CA62821B32F4C000A06C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7CA62831B32F4C000A06C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,8 +59,6 @@
 		D7CA628C1B32F4C000A06C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7CA628E1B32F4C000A06C2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7CA62911B32F4C000A06C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D7CA62A71B32F56700A06C2C /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenTok.framework; path = ../../../OpenTok.framework; sourceTree = "<group>"; };
-		D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OTKTextChat.xcodeproj; path = ../../../OTKTextChat/OTKTextChat.xcodeproj; sourceTree = "<group>"; };
 		D7CA62B91B32FDCF00A06C2C /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		D7CA62BA1B32FDCF00A06C2C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D7CA62BB1B32FDCF00A06C2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -105,19 +82,19 @@
 			files = (
 				D7CA62D41B32FDE200A06C2C /* libc++.dylib in Frameworks */,
 				D7CA62CA1B32FDCF00A06C2C /* OpenGLES.framework in Frameworks */,
-				D7CA62B41B32F5BD00A06C2C /* libOTKTextChat.a in Frameworks */,
 				D7CA62CE1B32FDCF00A06C2C /* AVFoundation.framework in Frameworks */,
 				D7CA62C81B32FDCF00A06C2C /* SystemConfiguration.framework in Frameworks */,
 				D7CA62D21B32FDCF00A06C2C /* UIKit.framework in Frameworks */,
 				D7CA62CC1B32FDCF00A06C2C /* CoreMedia.framework in Frameworks */,
-				D7CA62A81B32F56700A06C2C /* OpenTok.framework in Frameworks */,
 				D7CA62C71B32FDCF00A06C2C /* GLKit.framework in Frameworks */,
 				D7CA62C91B32FDCF00A06C2C /* CoreTelephony.framework in Frameworks */,
 				D7CA62D01B32FDCF00A06C2C /* Foundation.framework in Frameworks */,
+				D78C23411B4D64E1004EFC90 /* libOTKTextChat.a in Frameworks */,
 				D7CA62CF1B32FDCF00A06C2C /* QuartzCore.framework in Frameworks */,
 				D7CA62D11B32FDCF00A06C2C /* CoreGraphics.framework in Frameworks */,
 				D7CA62CD1B32FDCF00A06C2C /* AudioToolbox.framework in Frameworks */,
 				D7CA62C61B32FDCF00A06C2C /* VideoToolbox.framework in Frameworks */,
+				D76A181E1B3DB419009F51BC /* OpenTok.framework in Frameworks */,
 				D7CA62CB1B32FDCF00A06C2C /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D76A18161B3DB419009F51BC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D78C233E1B4D64E1004EFC90 /* libOTKTextChat.a */,
+				D78C233F1B4D64E1004EFC90 /* OTKTextChatComponent.h */,
+				D78C23401B4D64E1004EFC90 /* OTKTextChatBundle.bundle */,
+				D76A181B1B3DB419009F51BC /* OpenTok.framework */,
+			);
+			name = Libs;
+			path = ../../../libs;
+			sourceTree = "<group>";
+		};
 		D7CA62751B32F4C000A06C2C = {
 			isa = PBXGroup;
 			children = (
@@ -144,9 +133,8 @@
 		D7CA62801B32F4C000A06C2C /* TextChatSample */ = {
 			isa = PBXGroup;
 			children = (
-				D7CA62A71B32F56700A06C2C /* OpenTok.framework */,
+				D76A18161B3DB419009F51BC /* Libs */,
 				D7CA62D51B32FDF500A06C2C /* Frameworks */,
-				D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */,
 				D7CA62851B32F4C000A06C2C /* AppDelegate.h */,
 				D7CA62861B32F4C000A06C2C /* AppDelegate.m */,
 				D7CA62881B32F4C000A06C2C /* ViewController.h */,
@@ -166,15 +154,6 @@
 				D7CA62831B32F4C000A06C2C /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D7CA62AA1B32F5AB00A06C2C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */,
-				D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D7CA62D51B32FDF500A06C2C /* Frameworks */ = {
@@ -213,7 +192,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D7CA62B31B32F5B700A06C2C /* PBXTargetDependency */,
 			);
 			name = TextChatSample;
 			productName = TextChatSample;
@@ -245,12 +223,6 @@
 			mainGroup = D7CA62751B32F4C000A06C2C;
 			productRefGroup = D7CA627F1B32F4C000A06C2C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D7CA62AA1B32F5AB00A06C2C /* Products */;
-					ProjectRef = D7CA62A91B32F5AB00A06C2C /* OTKTextChat.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D7CA627D1B32F4C000A06C2C /* TextChatSample */,
@@ -258,29 +230,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D7CA62AF1B32F5AB00A06C2C /* libOTKTextChat.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOTKTextChat.a;
-			remoteRef = D7CA62AE1B32F5AB00A06C2C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D7CA62B11B32F5AB00A06C2C /* OTKTextChatBundle.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OTKTextChatBundle.bundle;
-			remoteRef = D7CA62B01B32F5AB00A06C2C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		D7CA627C1B32F4C000A06C2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D7CA628D1B32F4C000A06C2C /* Main.storyboard in Resources */,
+				D78C23421B4D64E1004EFC90 /* OTKTextChatBundle.bundle in Resources */,
 				D7CA62921B32F4C000A06C2C /* LaunchScreen.xib in Resources */,
 				D7CA628F1B32F4C000A06C2C /* Images.xcassets in Resources */,
 			);
@@ -300,14 +256,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D7CA62B31B32F5B700A06C2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OTKTextChat;
-			targetProxy = D7CA62B21B32F5B700A06C2C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7CA628B1B32F4C000A06C2C /* Main.storyboard */ = {
@@ -417,10 +365,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/cesarg/devel/tokbox/opentok-ios-sdk-ui",
+					"$(PROJECT_DIR)/../../libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${PROJECT_DIR}/../../libs",
 				);
 				INFOPLIST_FILE = TextChatSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -431,10 +388,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/cesarg/devel/tokbox/opentok-ios-sdk-ui",
+					"$(PROJECT_DIR)/../../libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${PROJECT_DIR}/../../libs",
 				);
 				INFOPLIST_FILE = TextChatSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
