@@ -350,6 +350,7 @@
 		D79756D01B1F73630022B7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,6 +361,7 @@
 		D79756D11B1F73630022B7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,6 +421,7 @@
 				D79756D11B1F73630022B7B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D79756DD1B1F74690022B7B9 /* Build configuration list for PBXNativeTarget "OTKTextChatBundle" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +430,7 @@
 				D79756DF1B1F74690022B7B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

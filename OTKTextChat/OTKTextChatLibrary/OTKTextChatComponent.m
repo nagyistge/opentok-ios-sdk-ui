@@ -38,9 +38,11 @@ typedef enum : NSUInteger {
 
 @implementation OTKTextChatComponent {
     int maxLength;
+    NSString *mySenderId;
+    NSString *myAlias;
 }
 
--(id)init {
+- (instancetype)init {
     self = [super init];
     if (self)  {
         _messages = [[NSMutableArray alloc] init];
@@ -74,6 +76,7 @@ typedef enum : NSUInteger {
         _textChatView.textField.leftViewMode = UITextFieldViewModeAlways;
         
         [self updateCounter:maxLength];
+        
     }
     return self;
 }
@@ -124,7 +127,7 @@ typedef enum : NSUInteger {
                                            forIndexPath:indexPath];
     
     if (cell.username) {
-        cell.username.text = msg.sender;
+        cell.username.text = msg.senderAlias;
     }
     if (cell.time) {
         NSDateFormatter *timeFormatter = [[NSDateFormatter alloc]init];
@@ -230,6 +233,11 @@ typedef enum : NSUInteger {
     [self updateCounter:maxLength - (int)[_textChatView.textField.text length]];
 }
 
+- (void)setSenderId:(NSString *)senderId alias:(NSString *)alias {
+    mySenderId = senderId;
+    myAlias = alias;
+}
+
 #pragma mark Implementation
 
 - (void)pushBackMessage:(OTKChatMessage *)message {
@@ -237,7 +245,7 @@ typedef enum : NSUInteger {
         OTKChatMessage *prev = [_messages objectAtIndex:[_messages count] -1];
         
         if ([message.dateTime timeIntervalSinceDate:prev.dateTime] < DEFAULT_TIME_SPAN &&
-            [prev.sender isEqualToString:message.sender]) {
+            [prev.senderId isEqualToString:message.senderId]) {
             if (message.type == OTK_RECEIVED_MESSAGE) {
                 message.type = OTK_RECEIVED_MESSAGE_SHORT;
             } else {
@@ -257,7 +265,8 @@ typedef enum : NSUInteger {
 - (IBAction)onSendButton:(id)sender {
     if ([_textChatView.textField.text length] > 0) {
         OTKChatMessage *msg = [[OTKChatMessage alloc] init];
-        msg.sender = @"me";
+        msg.senderAlias = myAlias;
+        msg.senderId = mySenderId;
         msg.text = _textChatView.textField.text;
         msg.type = OTK_SENT_MESSAGE;
         msg.dateTime = [[NSDate alloc] init];
@@ -287,7 +296,7 @@ typedef enum : NSUInteger {
                 _textChatView.errorMessage.alpha = 0.0f;
             } completion:nil];
             
-        }
+        }        
     }
 }
 

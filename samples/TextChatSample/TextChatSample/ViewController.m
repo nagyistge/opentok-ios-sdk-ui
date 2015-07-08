@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "OTKTextChat/OTKTextChatComponent.h"
 #import <OpenTok/OpenTok.h>
 
 @interface ViewController ()
@@ -92,7 +91,6 @@ static NSString* const kTextChatType = @"TextChat";
 }
 
 - (BOOL)onMessageReadyToSend:(OTKChatMessage *)message {
-    message.sender = _session.connection.data;
     OTError *error = nil;
     [_session signalWithType:kTextChatType string:message.text connection:nil error:&error];
     if (error) {
@@ -113,6 +111,7 @@ static NSString* const kTextChatType = @"TextChat";
     _textChat.delegate = self;
     
     [_textChat setMaxLength:1005];
+    [_textChat setSenderId:session.connection.connectionId alias:session.connection.data];
     
     CGRect r = self.view.bounds;
     r.origin.y += 20;
@@ -160,7 +159,8 @@ static NSString* const kTextChatType = @"TextChat";
      withString:(NSString*)string {
     if (![connection.connectionId isEqualToString:_session.connection.connectionId]) {
         OTKChatMessage *msg = [[OTKChatMessage alloc]init];
-        msg.sender = connection.data;
+        msg.senderAlias = connection.data;
+        msg.senderId = connection.connectionId;
         msg.text = string;
         [self.textChat sendMessage:msg];
     }

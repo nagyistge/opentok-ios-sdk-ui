@@ -8,10 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
 @interface OTKChatMessage : NSObject
 
-@property (nonatomic, copy) NSString *sender;
+@property (nonatomic, copy) NSString *senderAlias;
+@property (nonatomic, copy) NSString *senderId;
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSDate *dateTime;
 
@@ -55,5 +55,10 @@
  * Set the maximum length of a text chat message.
  */
 - (void)setMaxLength:(int) length;
+
+/**
+ * Set the sender alias and the sender id of the output messages.
+ */
+- (void)setSenderId:(NSString *)senderId alias:(NSString *)alias;
 
 @end
