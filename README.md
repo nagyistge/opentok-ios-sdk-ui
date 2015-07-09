@@ -14,6 +14,6 @@ If you're interested to learn more about Text Chat:
 * [Sample App](/samples/TextChatSample/) -- Sample Android App using the OpenTok iOS Text Chat widget.
   See the [README.md file](/samples/TextChatSample/README.md) for documentation.
 
-* [Documentation](/text-chat-docs/) -- API reference for the OpenTok iOS Text Chat widget.
+* [Documentation](/TextChat-docs/) -- API reference for the OpenTok iOS Text Chat widget.
 
 * [Source code](/OTKTextChat/) -- Source code for the OpenTok iOS Text Chat widget.

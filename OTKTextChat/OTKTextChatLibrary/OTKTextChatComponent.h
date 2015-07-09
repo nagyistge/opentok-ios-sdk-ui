@@ -8,17 +8,33 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+/**
+ * Defines the chat message object that you pass into the
+ * <[OTKTextChatComponent sendMessage:]> method.
+ */
 @interface OTKChatMessage : NSObject
 
+/**
+ * The sender alias for the message.
+ */
 @property (nonatomic, copy) NSString *senderAlias;
+/**
+ * The unique ID of the sender.
+ */
 @property (nonatomic, copy) NSString *senderId;
+/**
+ * The text of the message.
+ */
 @property (nonatomic, copy) NSString *text;
+/**
+ * The timestamp for the message.
+ */
 @property (nonatomic, copy) NSDate *dateTime;
 
 @end
 
 /**
- * An delegate for receiving events when a text chat message is ready to send.
+ * A delegate for receiving events when a text chat message is ready to send.
  */
 @protocol OTKTextChatDelegate <NSObject>
 
@@ -48,16 +64,25 @@
 
 /**
  * Add a message to the TextChatListener received message list.
+ *
+ * @param message The message to send.
  */
 - (BOOL)sendMessage:(OTKChatMessage *)message;
 
 /**
  * Set the maximum length of a text chat message.
+ *
+ * @param length The maximum length for a message.
  */
 - (void)setMaxLength:(int) length;
 
 /**
- * Set the sender alias and the sender id of the output messages.
+ * Set the sender ID and the sender alias of the output messages.
+ *
+ * @param senderId The unique ID for the sender. The OTKTextChatComponent uses this ID
+ * to group messages from the same sender in the user interface.
+ *
+ * @param alias The string (alias) identifying the sender of the message.
  */
 - (void)setSenderId:(NSString *)senderId alias:(NSString *)alias;
 

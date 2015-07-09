@@ -105,7 +105,7 @@ static NSString* const kTextChatType = @"TextChat";
 
 - (void)sessionDidConnect:(OTSession*)session {
     
-    // When the connection has completed okay we can create the chat component 
+    // When we've connected to the session, we can create the chat component.
     _textChat = [[OTKTextChatComponent alloc] init];
     
     _textChat.delegate = self;

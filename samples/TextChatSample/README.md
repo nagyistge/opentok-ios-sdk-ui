@@ -42,9 +42,12 @@ connecting to the session, it instantiates a OTKTextChatComponent instance and
 adds its view as a subview of the main view:
 
 ```
-// When the connection has completed okay we can create the chat component 
 _textChat = [[OTKTextChatComponent alloc] init];
+
 _textChat.delegate = self;
+
+[_textChat setMaxLength:1005];
+[_textChat setSenderId:session.connection.connectionId alias:session.connection.data];
 
 CGRect r = self.view.bounds;
 r.origin.y += 20;
@@ -58,8 +61,12 @@ It defines an API and a user interface for text chat messaging.
 
 The code sets the main ViewController object as the delegate for
 OTKTextChatComponent events.
-Note that the ViewController class implements the OTKTextChatDelegate
-delegate methods.
+
+The code calls the `[_textChat setMaxLength:]` method of to set the maximum length of the message.
+
+The code calls the `[_textChat setMaxLength:alias:]` method to set the sender ID and alias for
+the local client. The ID is set to the local client's OpenTok connection ID (a unique identifier),
+and the alias is set to the connection data added when you created a token for the user.
 
 The ViewController class implements the
 `[OTKTextChatDelegate onMessageReadyToSend:]` method. This method is called when
@@ -67,9 +74,8 @@ the user clicks the Send button:
 
 ```
 - (BOOL)onMessageReadyToSend:(OTKChatMessage *)message {
-    message.sender = _session.connection.data;
     OTError *error = nil;
-    [_session signalWithType:@"type" string:message.text connection:nil error:&error];
+    [_session signalWithType:kTextChatType string:message.text connection:nil error:&error];
     if (error) {
         return NO;
     } else {
@@ -80,7 +86,8 @@ the user clicks the Send button:
 
 The app uses the `[OTSession signalWithType: string: connection: error:]` method
 (defined by the OpenTok iOS SDK) to send a message to the session. The signal
-`type` indicates that it is a text chat message. The signal's `data` is set to the text of the message to send.
+`type` indicates that it is a text chat message. The signal's `data` is set to
+the text of the message to send.
 
 When the session is received, the implementation of the
 `[OTSessionDelegate receivedSignalType:fromConnection:withString:]` method 
@@ -92,7 +99,8 @@ When the session is received, the implementation of the
      withString:(NSString*)string {
     if (![connection.connectionId isEqualToString:_session.connection.connectionId]) {
         OTKChatMessage *msg = [[OTKChatMessage alloc]init];
-        msg.sender = connection.data;
+        msg.senderAlias = connection.data;
+        msg.senderId = connection.connectionId;
         msg.text = string;
         [self.textChat sendMessage:msg];
     }
@@ -102,7 +110,8 @@ When the session is received, the implementation of the
 The code creates a new OTKChatMessage instance. The OTKChatMessage class is
 defined by the OpenTok iOS Text Chat UI API. It defines a message to be
 displayed by an OTKTextChatComponent instance. An OTKChatMessage instance has
-a sender (a string that identifies the sender of the message) and the text
+a sender alias (a string that is displayed as the name of the sender of the message)
+a sender ID (a string that uniquely identifies the sender of the message) and the text
 of the message.
 
 The code checks to see if the signal was sent by another client
@@ -114,4 +123,5 @@ The `text` property of the OTKChatMessage object is set to the chat message
 text.
 
 The code calls the `[OTKTextChatComponent sendMessage:]` method 
-which causes the message to be displayed in the message list of the OTKTextChatComponent view:
+which causes the message to be displayed in the message list of the
+OTKTextChatComponent view.
