@@ -110,7 +110,7 @@ static NSString* const kTextChatType = @"TextChat";
     
     _textChat.delegate = self;
     
-    [_textChat setMaxLength:1005];
+    [_textChat setMaxLength:1050];
     [_textChat setSenderId:session.connection.connectionId alias:session.connection.data];
     
     CGRect r = self.view.bounds;
