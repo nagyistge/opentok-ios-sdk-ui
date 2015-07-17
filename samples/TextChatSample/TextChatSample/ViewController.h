@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "OTKTextChatComponent.h"
+#import <OpenTokUI/OTKTextChatComponent.h>
 
 @interface ViewController : UIViewController <OTKTextChatDelegate>
 
