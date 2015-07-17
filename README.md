@@ -9,6 +9,8 @@ Use this to build a text chat interface.
 
 Learn how to add the Text Chat widget to your iOS application [here](/samples/TextChatSample/README.md).
 
+Feel free to provide any feedback or ask questions at text-chat-beta@tokbox.com.
+
 If you're interested to learn more about Text Chat:
 
 * [Sample App](/samples/TextChatSample/) -- Sample Android App using the OpenTok iOS Text Chat widget.
