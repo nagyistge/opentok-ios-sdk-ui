@@ -14,7 +14,7 @@ A basic sample app showing the use of the OpenTok iOS Text Chat UI sample
 4. In the ViewController.m file, set the following
    properties to a test OpenTok session ID, token, and API key:
 
-   ```
+   ```objectivec
    // Replace with your OpenTok API key
    static NSString* const kApiKey = @"";
    // Replace with your generated session ID
@@ -41,7 +41,7 @@ Upon startup, the ViewController class connects to the OpenTok session. Upon
 connecting to the session, it instantiates a OTKTextChatComponent instance and
 adds its view as a subview of the main view:
 
-```
+```objectivec
 _textChat = [[OTKTextChatComponent alloc] init];
 
 _textChat.delegate = self;
@@ -64,15 +64,16 @@ OTKTextChatComponent events.
 
 The code calls the `[_textChat setMaxLength:]` method of to set the maximum length of the message.
 
-The code calls the `[_textChat setMaxLength:alias:]` method to set the sender ID and alias for
+The code calls the `[_textChat setSenderId:alias:]` method to set the sender ID and alias for
 the local client. The ID is set to the local client's OpenTok connection ID (a unique identifier),
-and the alias is set to the connection data added when you created a token for the user.
+and the alias is set to the connection data added when you created a token for the user. The alias
+is used as the name of the sender of outgoing messages (in the message list).
 
 The ViewController class implements the
 `[OTKTextChatDelegate onMessageReadyToSend:]` method. This method is called when
 the user clicks the Send button:
 
-```
+```objectivec
 - (BOOL)onMessageReadyToSend:(OTKChatMessage *)message {
     OTError *error = nil;
     [_session signalWithType:kTextChatType string:message.text connection:nil error:&error];
@@ -93,7 +94,7 @@ When the session is received, the implementation of the
 `[OTSessionDelegate receivedSignalType:fromConnection:withString:]` method 
 (defined by the OpenTok iOS SDK) is called:
 
-```
+```objectivec
 - (void)session:(OTSession*)session receivedSignalType:(NSString*)type
  fromConnection:(OTConnection*)connection
      withString:(NSString*)string {
@@ -115,10 +116,17 @@ a sender ID (a string that uniquely identifies the sender of the message) and th
 of the message.
 
 The code checks to see if the signal was sent by another client
-(`![connection.connectionId isEqualToString:_session.connection.connectionId]`).
-If it was, it sets the `sender` property of the OTKChatMessage object to the
-connection data you specify when creating the user's token (see
-[Token creation](https://tokbox.com/developer/guides/create-token/) ).
+(`![connection.connectionId isEqualToString:_session.connection.connectionId]`). (Signals
+sent by the local client are automatically displayed by when the user clicks the Send button
+in the OTKTextChatComponent.)
+
+If it was, sets the `senderId` property of the OTKChatMessage object to the
+connection ID (a unique idendifier for the sender). The OTKTextChatComponent uses
+the sender ID to group messages sent by the same sender together. The code sets
+the `senderAlas` property of the OTKChatMessage object to the connection data you
+specify when creating the user's token (see [Token creation](https://tokbox.com/developer/guides/create-token/) ). The sender
+alias is used as the sender's name displayed in the message list.
+
 The `text` property of the OTKChatMessage object is set to the chat message
 text.
 
