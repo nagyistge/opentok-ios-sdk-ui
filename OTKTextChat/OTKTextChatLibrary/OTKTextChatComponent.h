@@ -10,7 +10,7 @@
 
 /**
  * Defines the chat message object that you pass into the
- * <[OTKTextChatComponent sendMessage:]> method.
+ * <[OTKTextChatComponent addMessage:]> method.
  */
 @interface OTKChatMessage : NSObject
 
