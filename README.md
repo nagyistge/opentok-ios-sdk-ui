@@ -11,7 +11,9 @@ You can download the latest build of the OTKTextChatBundle.bundle file from the
 
 Use this to build a text chat interface.
 
-Learn how to add the Text Chat widget to your iOS application). For more information, see:
+Feel free to provide any feedback or ask questions at text-chat-beta@tokbox.com.
+
+To learn more about the Text Chat widget, see the following:
 
 * [Sample App](/samples/TextChatSample/) -- A sample iOS app using the OpenTok iOS text chat
   widget. See the [README.md file](/text-chat-sample/README.md) for documentation.

@@ -67,7 +67,7 @@
  *
  * @param message The message to send.
  */
-- (BOOL)sendMessage:(OTKChatMessage *)message;
+- (BOOL)addMessage:(OTKChatMessage *)message;
 
 /**
  * Set the maximum length of a text chat message.

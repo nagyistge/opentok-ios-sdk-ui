@@ -162,7 +162,7 @@ static NSString* const kTextChatType = @"TextChat";
         msg.senderAlias = connection.data;
         msg.senderId = connection.connectionId;
         msg.text = string;
-        [self.textChat sendMessage:msg];
+        [self.textChat addMessage:msg];
     }
 }
 

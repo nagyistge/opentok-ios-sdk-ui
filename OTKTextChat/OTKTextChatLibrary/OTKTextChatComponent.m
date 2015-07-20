@@ -209,7 +209,7 @@ typedef enum : NSUInteger {
 
 #pragma mark Public API
 
-- (BOOL)sendMessage:(OTKChatMessage *)message {
+- (BOOL)addMessage:(OTKChatMessage *)message {
     
     message.type = OTK_RECEIVED_MESSAGE;
     if (!message.dateTime) {
@@ -296,7 +296,7 @@ typedef enum : NSUInteger {
                 _textChatView.errorMessage.alpha = 0.0f;
             } completion:nil];
             
-        }        
+        }
     }
 }
 
