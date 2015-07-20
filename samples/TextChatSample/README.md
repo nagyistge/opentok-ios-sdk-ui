@@ -103,7 +103,7 @@ When the session is received, the implementation of the
         msg.senderAlias = connection.data;
         msg.senderId = connection.connectionId;
         msg.text = string;
-        [self.textChat sendMessage:msg];
+        [self.textChat addMessage:msg];
     }
 }
 ```
@@ -130,6 +130,6 @@ alias is used as the sender's name displayed in the message list.
 The `text` property of the OTKChatMessage object is set to the chat message
 text.
 
-The code calls the `[OTKTextChatComponent sendMessage:]` method 
+The code calls the `[OTKTextChatComponent addMessage:]` method 
 which causes the message to be displayed in the message list of the
 OTKTextChatComponent view.

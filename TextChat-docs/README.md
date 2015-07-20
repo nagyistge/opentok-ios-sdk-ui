@@ -27,7 +27,7 @@ user interface:
   includes a `[OTKTextChatDelegate onMessageReadyToSend:]` message is sent when the user clicks
   the Send button (to send a message).
 
-* The `[OTKTextChatComponent sendMessage:]` method adds a new received messages to the message list.
+* The `[OTKTextChatComponent addMessage:]` method adds a new received messages to the message list.
   The OTKChatMessage class defines the message.
 
 The following sections provide details.
@@ -102,7 +102,7 @@ Sent messages are automatically displayed in the message list.
 
 ### Displaying received messages
 
-When your app receives a text message, use the `[OTKTextChatComponent sendMessage:]` method
+When your app receives a text message, use the `[OTKTextChatComponent addMessage:]` method
 to add it to the message list user interface.
 
 First create the OTKChatMessage object:
@@ -112,7 +112,7 @@ OTKChatMessage *msg = [[OTKChatMessage alloc]init];
 msg.senderId = @"5678";
 msg.senderAlias = @"Bob";
 msg.text = @"Hello.";
-[self.textChat sendMessage:msg];
+[self.textChat addMessage:msg];
 ```
 
 The `OTKChatMessage` object has these properties:
@@ -130,7 +130,7 @@ The `OTKChatMessage` object has these properties:
 In the example, these values are hardcoded. However, in a real app, you would pass
 in values for the specific message.
 
-Calling the `[TextChatComponent sendMessage:]` method causes the message to be displayed in
+Calling the `[TextChatComponent addMessage:]` method causes the message to be displayed in
 the TextChatComponent's message list.
 
 By default, a chat message is assigned the current time on the client. However, you can set it
