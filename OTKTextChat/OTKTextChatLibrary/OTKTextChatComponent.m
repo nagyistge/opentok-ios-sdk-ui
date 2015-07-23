@@ -168,7 +168,7 @@ typedef enum : NSUInteger {
         extras = 10.0f;
     }
     
-    UIFont *font = [UIFont preferredFontForTextStyle:@"System font 14.0 thin"];
+    UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:14.0];
     CGSize size = [msg.text sizeWithFont:font
                        constrainedToSize:CGSizeMake(tableView.bounds.size.width - 48, 9999) lineBreakMode:NSLineBreakByWordWrapping];
     
