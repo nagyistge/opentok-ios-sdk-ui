@@ -1,21 +1,20 @@
-OpenTok iOS text chat widget
-============================
+OpenTok iOS Text Chat Component
+===============================
 
-The OpenTok iOS Text Chat widget provides code for adding a user interface component
-for displaying and capturing text chat messages in an Andriod application.
+The OpenTok iOS Text Chat Component provides code for adding a user interface component
+for displaying and capturing text chat messages in an iOS application.
 
-The OpenTok iOS Text Chat widget API is included in the OTKTextChatBundle.bundle file,
-available at the
-[opentok-ios-sdk-ui Releases](https://github.com/opentok/opentok-ios-sdk-ui/releases) page.
+This component is currently available as a beta version. To obtain a binary version of
+the component, contact[text-chat-beta@tokbox.com](mailto:text-chat-beta@tokbox.com).
 
-The text-chat-sample directory in this repo used the text chat widget the [OpenTok signaling 
-API](https://tokbox.com/developer/guides/signaling/iOS/) to provide text chat in an
-OpenTok session.
+The text-chat-sample directory in this repo uses the OpenTok iOS Text Chat Component and
+the [OpenTok signaling API](https://tokbox.com/developer/guides/signaling/iOS/) to provide
+text chat in an OpenTok session.
 
-## Using the text chat widget
+## Using the OpenTok iOS iOS Text Chat Component
 
 The OTKTextChatBundle.bundle includes the classes and protocols that define the OpenTok iOS
-text chat widget API.
+Text Chat Component API.
 
 The OTKTextChatComponent class defines an iOS view control for adding and controling the text chat
 user interface:
@@ -32,7 +31,7 @@ user interface:
 
 The following sections provide details.
 
-### Instantiating and configuring the text chat component
+### Instantiating and configuring the OpenTok iOS Text Chat Component
 
 Instantiate a OTKTextChatComponent and add it to a container:
 
@@ -121,7 +120,7 @@ The `OTKChatMessage` object has these properties:
   matches the sender ID for the local client, the TextChatComponent object display's the
   message as a sent message in the message list. Otherwise, it displays it as a received
   message. (See the discussion of the `[TextChatComponent setSenderId:alias:]` method in
-  "Instantiating and configuring the text chat component".)
+  "Instantiating and configuring the OpenTok iOS Text Chat Component".)
 
 * `senderAlias` (NSString) - The name of the sender of the message to display in the message list.
 

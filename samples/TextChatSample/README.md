@@ -1,6 +1,6 @@
-OpenTok iOS Text Chat UI sample
-===============================
-A basic sample app showing the use of the OpenTok iOS Text Chat UI sample
+OpenTok iOS Text Chat Component sample
+======================================
+A basic sample app showing the use of the OpenTok iOS Text Chat Component
 
 ## Configuring the app
 
@@ -56,7 +56,7 @@ r.size.height -= 20;
 [self.view addSubview:_textChat.view];
 ```
 
-The OTKTextChatComponent class is defined in the OpenTok iOS Text Chat UI API.
+The OTKTextChatComponent class is defined in the OpenTok iOS Text Chat Component API.
 It defines an API and a user interface for text chat messaging.
 
 The code sets the main ViewController object as the delegate for
@@ -109,7 +109,7 @@ When the session is received, the implementation of the
 ```
 
 The code creates a new OTKChatMessage instance. The OTKChatMessage class is
-defined by the OpenTok iOS Text Chat UI API. It defines a message to be
+defined by the OpenTok iOS Text Chat Component API. It defines a message to be
 displayed by an OTKTextChatComponent instance. An OTKChatMessage instance has
 a sender alias (a string that is displayed as the name of the sender of the message)
 a sender ID (a string that uniquely identifies the sender of the message) and the text
